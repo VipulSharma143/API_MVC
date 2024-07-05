@@ -178,14 +178,14 @@ namespace NP_APP.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult PaymentSuccessful()
         {
-            string accountSid = "AC198deaa21ee871031d58083bb790318b";
-            string authToken = "66c4673d4f279f396378b3cce1971585";
+            string accountSid = "";
+            string authToken = "";
 
             TwilioClient.Init(accountSid, authToken);
 
-            string fromPhoneNumber = "+12183167899";
+            string fromPhoneNumber = "+";
 
-            string toPhoneNumber = "+917018324640";
+            string toPhoneNumber = "+";
 
             try
             {
