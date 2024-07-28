@@ -185,7 +185,7 @@ namespace NP_APP.Controllers
 
             string fromPhoneNumber = "+";
 
-            string toPhoneNumber = "+";
+            string toPhoneNumber = "";
 
             try
             {
@@ -201,7 +201,7 @@ namespace NP_APP.Controllers
             {
                 Console.WriteLine("An error occurred: " + ex.Message);
             }
-            return View(ProcessPayment);
+            return View(ProcessPayment;
         }
     }
 }
